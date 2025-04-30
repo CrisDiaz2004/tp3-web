@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +9,89 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
-        <div class="container">
-            <h1> <a href="index.html"> <img src="img/bochica_logo_transparent.png" alt="logo-restaurant" width="100"></a></h1>
+        <div class="container header-contenu">
+            <h1> <a href="index.html"> <img src="img/bochica_logo_transparent.png" alt="logo-restaurant" class="logo"></a></h1>
 
-            <nav class="links">
-                <ul>
+            <nav>
+                <ul class="links">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="restaurant.html">Restaurant</a></li>
                     <li><a href="reservation.html">Réservation</a></li>
                     <li><a href="commande.html" class="commande-btn">Ma commande</a></li>
                 </ul>
             </nav>
-
-            <div class="menu-mobile">
-                <img src="img/5a195ba2-a09e-4c73-b2a7-db229d102a8b.png" alt="menu-mobile">
-            </div>
+        
         </div>
     </header>
 
-    <main class="container">
-        <h2>Notre Menu</h2>
+    <!-- section principale -->
+    <main>
+        <section class="hero">
+           <div class="container hero-contenu">
+            <h2>Bochica</h2>
+            <p>Bochica Latino – L’authenticité colombienne au cœur de la cuisine latine.
+               Savourez nos arepas, empanadas et plats traditionnels, préparés avec soin dans une ambiance chaleureuse et raffinée.</p>
 
-        <section class="menu-section">
-            <h3>Entrées</h3>
-
+            <div class="buttons">
+                <a href="#" class="btn-principal">Coammander en ligne</a>
+                <a href="#" class="btn-secondaire">Réserver</a>
+            </div>
+            
+            <img src="img/andres-carne-de-res.jpg" alt="img du restaurant" class="hero-img">
+           </div>  
         </section>
 
+        <section class="temoignages">
+            <h3>Témoignages</h3>
+            <p>Clients satisfaits</p>
+            <div class="cartes">
+                <!-- cartes de témoignages -->
+                <article class="carte">
+                    <p>"excellent service et plats délicieux!"</p>
+                    <span>- James Quil</span>
+                </article>
+                
+                <article class="carte">
+                    <p>“Ambiance chaleureuse et personnel attentionné."</p>
+                    <span>– Julie Tremblay</span>
+                </article>
+
+                <article class="carte">
+                    <p>“Le meilleur tartare que j’ai mangé de ma vie.”</p>
+                    <span>– Karim El Haddad</span>
+                  </article>
+
+                  <article class="carte">
+                    <p>“Tout simplement wow. Je recommande à tout le monde.”</p>
+                    <span>– Sophie Nadeau</span>
+                  </article>
+
+                  <article class="carte">
+                    <p>“Un vrai voyage culinaire du début à la fin.”</p>
+                    <span>– Marc-André Bouchard</span>
+                  </article>
+
+                  <article class="carte">
+                    <p>“Service rapide et prix raisonnables. J’adore !”</p>
+                    <span>– Léa Pelletier</span>
+                  </article>
+            </div>
+        </section>
     </main>
     
+    <footer>
+        <div class="container">
+            <p>Réalisé par: <strong>Cristian Casallas</strong></p>
+            <div class="socials">
+                <a href="#"><img src="img/instagram.png" alt="ig"></a>
+                <a href="#"><img src="img/twitter.png" alt="x"></a>
+                <a href="#"><img src="img/facebook-app-symbol.png" alt="fb"></a>
+            </div>
+            <p>Intégraion web 1 - Cégep Garneau - Hiver 2025</p>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,131 @@
+/*=== General ===*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*== body ==*/
+body {
+    font-family: 'Open sans', sans-serif;
+    line-height: 1.6;
+    color: #1d1d1d;
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'playfait Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*== container ==*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*== header ==*/
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.header-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.links a {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.commande-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.commande-btn:hover {
+    background-color: #ff4c4c;
+}
+
+/*== section hero ==*/
+.hero {
+    border-color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.here h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+.bouttons {
+    margin-bottom: 2rem;
+}
+
+.btn-principal,
+.btn-secondaire {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btm-principal {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-principal:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondaire:hover {
+    background-color: #495057;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
