@@ -79,33 +79,52 @@ header {
 /*== section hero ==*/
 .hero {
     border-color: white;
-    padding: 3rem 1rem;
-    text-align: center;
+    padding: 4rem 0;
 }
 
-.here h2 {
+.hero-contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-txt {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.hero-txt h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
-    max-width: 800px;
-    margin: 0 auto 1.5rem;
+.hero-txt p {
+    margin-bottom:1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hero-img {
+    flex: 1;
+    min-width: 300px;
 }
 
 .bouttons {
-    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .btn-principal,
 .btn-secondaire {
     display: inline-block;
-    margin: 0 0.5rem;
     padding: 0.75rem 1.5rem;
-    border: none;
     font-weight: bold;
     border-radius: 5px;
     font-size: 1rem;
+    text-align: center;
 }
 
 .btm-principal {
@@ -123,9 +142,58 @@ header {
 }
 
 .hero-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-img {
     width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    margin-top: 1rem;
+}
+
+/*-- temoignages --*/
+
+.temoignages {
+    background-color: #6c757d;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.temoignages h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'playfair Display', serif;
+}
+
+.temoignages p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.carte {
+    background-color: white;
+    padding: 1.5rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb( rgb(108, 108, 110));
+    text-align: left;
+}
+
+.carte p {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.carte span {
+    font-weight: ;
 }
