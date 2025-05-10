@@ -158,7 +158,6 @@ header {
 .temoignages {
     background-color: #6c757d;
     padding: 4rem 1rem;
-    text-align: center;
 }
 
 .temoignages h3 {
@@ -177,13 +176,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .carte {
     background-color: white;
     padding: 1.5rem;
-    width: 300px;
+    width: 355px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgb( rgb(108, 108, 110));
     text-align: left;
@@ -194,6 +193,104 @@ header {
     font-style: italic;
 }
 
-.carte span {
-    font-weight: ;
+
+/*===footer==*/
+
+footer {
+    background-color: #6c757d;
+    padding: 2rem 1rem 1rem 1rem;
+    border-top: 1px solid #ddd;
+  }
+
+.footer-top,
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid black;
+}
+
+.reseaux-droite {
+    text-align: center;
+    display: flex;
+    gap: 0.5rem;
+}
+  
+footer .reseaux img {
+  width: 20px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+  
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === RÉSERVATION === */
+
+
+.reservation {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+}
+
+.conteneur-formulaire {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.conteneur-formulaire h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.conteneur-formulaire label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.conteneur-formulaire textarea {
+    min-height: 80px;
+}
+
+.bouton-envoyer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.bouton-envoyer input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bouton-envoyer input[type="submit"]:hover {
+    background-color: #0056b3;
 }
