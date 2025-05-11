@@ -294,3 +294,94 @@ img {
 .bouton-envoyer input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+.page-restaurant h2 {
+    font-size: 3.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+/* Grille d'images */
+.grille-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+}
+
+.grille-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.grille-images img:nth-child(1) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.grille-images img:nth-child(2) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.grille-images img:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.grille-images img:nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.grille-images img:nth-child(5) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.grille-images img:nth-child(6) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+/* Tablette */
+
+@media (max-width: 992px) {
+    .grille-images {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+    }
+}
+
+/* telephone */
+
+@media (max-width: 600px) {
+    .grille-images {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+    }
+}
+
+/* adresse et carte */
+
+.infos-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.infos-texte,
+.infos-carte {
+    flex: 1 1 45%;
+}
+
