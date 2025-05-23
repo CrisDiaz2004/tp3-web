@@ -62,13 +62,13 @@ header {
 }
 
 .links a:hover {
-    background-color: #eee;
+    background-color: #57585c;
     border-radius: 5px;
 }
 
 .commande-btn {
-    background-color: #ff6b6b;
-    color: #fff;
+    background-color: #cfa241;
+    color: #000000;
     border-radius: 4px;
 }
 
@@ -156,7 +156,7 @@ header {
 /*-- temoignages --*/
 
 .temoignages {
-    background-color: #6c757d;
+    background-color: #ffffff;
     padding: 4rem 1rem;
 }
 
@@ -180,11 +180,11 @@ header {
 }
 
 .carte {
-    background-color: white;
+    background-color: rgb(185, 185, 185);
     padding: 1.5rem;
     width: 355px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgb( rgb(108, 108, 110));
+    box-shadow: 3px 6px rgb( rgb(0, 0, 0));
     text-align: left;
 }
 
@@ -197,9 +197,8 @@ header {
 /*===footer==*/
 
 footer {
-    background-color: #6c757d;
+    background-color: #ffffff;
     padding: 2rem 1rem 1rem 1rem;
-    border-top: 1px solid #ddd;
   }
 
 .footer-top,
@@ -236,7 +235,7 @@ footer .reseaux img {
   
 hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 2px solid #000000;
   margin: 1rem 0;
 }
 
@@ -348,25 +347,6 @@ img {
     grid-row: span 1;
 }
 
-
-/* Tablette */
-
-@media (max-width: 992px) {
-    .grille-images {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 150px;
-    }
-}
-
-/* telephone */
-
-@media (max-width: 600px) {
-    .grille-images {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 150px;
-    }
-}
-
 /* adresse et carte */
 
 .infos-contact {
@@ -383,5 +363,183 @@ img {
 .infos-texte,
 .infos-carte {
     flex: 1 1 45%;
+}
+
+/* === ma commande === */
+
+.page-commande {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.ma-commande {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+/* Titre principal */
+
+.ma-commande h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+/* Section des tableaux */
+.commande-tables {
+    flex: 2;
+}
+
+.commande-tables h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #1d1d1d;
+}
+
+/* Style général des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #b6b6b6;
+    font-weight: bold;
+}
+
+tr:nth-child(3) {
+    background-color: #b6b6b6;
+}
+
+/* Bloc détails à droite */
+.details {
+    flex: 1;
+    background-color: #b6b6b6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    min-width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.details p strong {
+    font-weight: bold;
+}
+
+.btn-commander {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-commander:hover {
+    background-color: #333;
+}
+
+/* === RESPONSIVE TABLETTE === */
+@media (max-width: 992px) {
+  .hero-contenu,
+  .ma-commande,
+  .infos-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-txt,
+  .hero-img,
+  .details,
+  .infos-texte,
+  .infos-carte {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grille-images {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+  }
+
+  .conteneur-formulaire {
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+
+/* === RESPONSIVE MOBILE === */
+@media (max-width: 600px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .grille-images {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px;
+  }
+
+  .commande-contenu,
+  .ma-commande,
+  .reservation {
+    flex-direction: column;
+  }
+
+  .details {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .conteneur-formulaire {
+    padding: 1rem;
+  }
+}
+
+/* Par défaut, cacher le menu hamburger */
+.menu-mobile {
+  display: none;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #000000;
+  padding: 1rem;
+}
+
+/* À moins de 960px, masquer la nav, montrer l’icône */
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
 }
 
